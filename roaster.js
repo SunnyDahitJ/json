@@ -1,5 +1,5 @@
 angular.module("roaster", [])
-.controller("roaster_ctrl",function($con)
+.controller("roaster_ctrl",function($scope)
 {
     var roaster_list=[
         {emp_id:201102,dept_name:"frontdesk" ,emp_name:"Panda Panda" ,assign_date:new Date("January 13,2022"), age:32, salary:32000},
@@ -11,5 +11,5 @@ angular.module("roaster", [])
         {emp_id:201108,dept_name:"Administration" ,emp_name:"Brad pit" ,assign_date:new Date("January 30,2022"), age:54, salary:50000},
         {emp_id:201109,dept_name:"Accounts" ,emp_name:"DJ Snake" ,assign_date:new Date("January 13,2022"), age:22, salary:32000}
     ];
-    $con.roaster_list=roaster;  
+    $scope.roaster_list=roaster_list;  
 });
